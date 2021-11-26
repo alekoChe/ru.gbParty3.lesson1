@@ -25,14 +25,14 @@ public class AppTask3 {
         box11.loading(apple2);
         box11.loading(apple3);
         System.out.println(box1.cargo);
-        System.out.println(box1.getWeight(box1));
+        System.out.println(box1.getWeight()); // взвешиваем box1
 
         box2.loading(orange1);
         box2.loading(orange2);
         box2.loading(orange3);
         System.out.println(box2.cargo);
-        System.out.println(box2.getWeight(box2));
-        //System.out.println(box1.compare(box1, box2));
+        System.out.println(box2.getWeight());//
+
         System.out.println(box1.compare(box2));
         System.out.println(box1.compare(box11));
 
@@ -40,9 +40,9 @@ public class AppTask3 {
         box3.loading(apple4);
         box3.loading(apple5);
         box3.loading(apple6);
-        System.out.println(box3.getWeight(box3));
+        System.out.println(box3.getWeight());//
         box3.pouringFruitFromOneBoxToAnother(box1, box3);
-        System.out.println(box3.getWeight(box3));
-        System.out.println(box1.getWeight(box1));
+        System.out.println(box3.getWeight());//
+        System.out.println(box1.getWeight());//
     }
 }
