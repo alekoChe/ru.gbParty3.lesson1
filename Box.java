@@ -20,4 +20,15 @@ public class Box <T extends Fruit> {  //<T>, <T extends Fruit>
         cargo.add(fruit);
         System.out.println("В коробку положили " + fruit.getClass().getName());
     }
+    public float getWeight(Box box) {
+        /** Сделать метод getWeight(), который высчитывает вес коробки,
+         * зная вес одного фрукта и их количество: вес яблока – 1.0f,
+         * апельсина – 1.5f (единицы измерения не важны);
+         */
+        float weight = 0.0f;
+        for (T item : cargo) {
+            weight += item.getWeight();
+        }
+        return weight;
+    }
 }
