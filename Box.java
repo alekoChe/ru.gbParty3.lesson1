@@ -34,4 +34,10 @@ public class Box <T extends Fruit> {  //<T>, <T extends Fruit>
     public boolean compare(Box box) {
         return Math.abs(getWeight(this) - box.getWeight(box)) < 0.001;
     }
+    public void pouringFruitFromOneBoxToAnother(Box<T> fromBox, Box<T> intoBox) { // intoBox
+        for (T fruit : fromBox.cargo) {
+            intoBox.cargo.add(fruit);
+        }
+        fromBox.cargo.clear();
+    }
 }
